@@ -1,0 +1,6 @@
+{
+  "name": "Quantum Observer",
+  "description": "Multi-window particle attraction and collision laboratory with real-time screen coordinate synchronization, interactive physics, and quantum field visualization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

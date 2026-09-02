@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #00f0ff;
+    --color-primary-dim: #00dbe9;
+    --color-secondary: #c3c0ff;
+    --color-surface: #131314;
+    --color-surface-container: #201f20;
+    --color-on-surface: #e5e2e3;
+    --color-on-surface-variant: #b9cacb;
+  }
+}
+
+.font-label-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-headline {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-body {
+  font-family: 'Geist', sans-serif;
+}
+
+.hud-panel {
+  background: rgba(20, 20, 22, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.45);
+}
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse-slow {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; filter: drop-shadow(0 0 15px rgba(0, 240, 255, 0.35)); }
+  50% { opacity: 1; filter: drop-shadow(0 0 35px rgba(0, 240, 255, 0.75)); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 24s linear infinite;
+}
+
+.animate-spin-reverse {
+  animation: spin-reverse-slow 32s linear infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
